@@ -9,3 +9,11 @@ I incorporated the described variables for run replications, num items, max weig
 
 The data collection code then wrote the results to the csv file. The last 2 columns allow for making sure that your data set is the same as the one in the code.
 To verify, make your dataset and sum all the weights/profits and verify that they are the same as in the csv
+
+The datacollection file will generate the data and run a nested loop to run through all the different set ups. A 'set up' is represented as one row in the csv file, with the first
+4 columns describing parameters of the set up, and the rest of the columns reflecting a statistic/quantity of the set up runs. For each setup, it runs the SHLO on the dataset for
+runtime times (currently set to 30, thus it runs SHLO 30 times on each dataset). Then when it calls SHLO, that function calls the evaluation function (eF) to evaluate the profit 
+and weight of a given solution. 
+
+The SHLO code is taken from their provided sample code and modified for the particular knapsack problem (no need for B2R transform, and bit is always 1, thus no need for m= bit* 
+dim since then m=dim).
