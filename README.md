@@ -7,7 +7,8 @@ They have made public some example code of this at https://www.mathworks.com/mat
 
 I incorporated the described variables for run replications, num items, max weight, etc. 
 
-The data collection code then wrote the results to the csv file. The last 2 columns allow for making sure that your data set is the same as the one in the code.
+The data collection code then wrote the results to the csv file. The code has a nested loop and will take a bit of time to run. The last 2 columns allow for making sure that your
+data set is the same as the one in the code.
 To verify, make your dataset and sum all the weights/profits and verify that they are the same as in the csv
 
 The datacollection file will generate the data and run a nested loop to run through all the different set ups. A 'set up' is represented as one row in the csv file, with the first
