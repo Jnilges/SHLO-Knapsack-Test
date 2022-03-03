@@ -51,7 +51,7 @@ for a = 1:colSize
     dataMatrix(a,10) = min(tmp(:,2));
     dataMatrix(a,11) = max(tmp(:,2));
 end
-labels = {'Dim', 'MaxWeight' ,'PopSize', 'MaxEvals' ,'SolAvg', 'SolStd', 'SolMin' ,'SolMax', 'SolIdxMean' ,'SolIdxMin', 'SolIdxMax', 'SumProfit', 'SumWeight'};
+labels = {'Dim', 'MaxWeight' ,'PopSize', 'MaxIters' ,'SolAvg', 'SolStd', 'SolMin' ,'SolMax', 'SolIdxMean' ,'SolIdxMin', 'SolIdxMax', 'SumProfit', 'SumWeight'};
 kk = array2table(dataMatrix);
 kk.Properties.VariableNames(1:13) = labels;
 kk
