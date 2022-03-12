@@ -19,5 +19,5 @@ and weight of a given solution.
 The SHLO code is taken from their provided sample code and modified for the particular knapsack problem (no need for B2R transform, and bit is always 1, thus no need for m= bit* 
 dim since then m=dim).
 
-code for a greedy solution (gS) is also given, which gives surprisingly great results given that it utilized such a low function evaluation count, the function does a single pass
+Code for a greedy solution (gS) is also given, which gives surprisingly great results given that it utilized such a low function evaluation count, the function does a single pass
 of the items sorted by efficiency, and does nto check if it can fix another item in.
