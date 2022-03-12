@@ -17,7 +17,7 @@ runtime times (currently set to 30, thus it runs SHLO 30 times on each dataset).
 and weight of a given solution. 
 
 The SHLO code is taken from their provided sample code and modified for the particular knapsack problem (no need for B2R transform, and bit is always 1, thus no need for m= bit* 
-dim since then m=dim).
+dim since then m=dim). If you wish to compare these results with other metaheuristics such as PSO, it is often best to count function evaluations. SHLO does iterations * popsize function evaluations. For the first data set, this is 100 popsize * 10,000 iterations = 10 mil func evals.
 
 Code for a greedy solution (gS) is also given, which gives surprisingly great results given that it utilized such a low function evaluation count, the function does a single pass
 of the items sorted by efficiency, and does not check if it can fix another item in. For example, for the first dataset the SHLO gets a solution generally of about 6704 up to
