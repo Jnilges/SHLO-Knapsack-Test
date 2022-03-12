@@ -20,4 +20,6 @@ The SHLO code is taken from their provided sample code and modified for the part
 dim since then m=dim).
 
 Code for a greedy solution (gS) is also given, which gives surprisingly great results given that it utilized such a low function evaluation count, the function does a single pass
-of the items sorted by efficiency, and does nto check if it can fix another item in.
+of the items sorted by efficiency, and does not check if it can fix another item in. For example, for the first dataset the SHLO gets a solution generally of about 6704 up to
+6709, (other better algothims with meta-heuristics generate 6710+) whereas the initial greedy solution is 6990 with weight of 992 (mas is 1000) so it can reasonably fit another
+item as well.
